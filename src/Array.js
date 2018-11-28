@@ -62,6 +62,7 @@
                         i--;
                     }
                 }
+                return this;
             }
         },
         First: {
@@ -158,6 +159,7 @@
                     var y = clause.apply(b, [b]);
                     return x < y ? -1 : (x > y ? 1 : 0);
                 });
+                return this;
             }
         },
         Select: {

@@ -99,6 +99,7 @@
                     var desc = Object.getOwnPropertyDescriptor(o, names[i]);
                     Object.defineProperty(this, names[i], desc);
                 }
+                return this;
             }
         }
     });
