@@ -170,9 +170,7 @@
                 var arr = [];
                 for (var i = 0; i < this.length; i++) {
                     item = clause.apply(this[i], [this[i]]);
-                    if (item) {
-                        arr[arr.length] = item;
-                    }
+                    arr[arr.length] = item;
                 }
                 return arr;
             }
