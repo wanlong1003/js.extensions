@@ -1,8 +1,6 @@
-/*
-  对Object进行扩展
-*/
 (function (Object) {
     Object.defineProperties(Object.prototype, {
+        //是否为函数
         IsFunction: {
             writable: true,
             enumerable: false,
@@ -11,6 +9,7 @@
                 return typeof this === "function";
             }
         },
+        //是否为数组
         IsArray: {
             writable: true,
             enumerable: false,
@@ -19,6 +18,7 @@
                 return typeof this === "object" && this instanceof Array;
             }
         },
+        //是否为数字
         IsNumber: {
             writable: true,
             enumerable: false,
@@ -27,6 +27,7 @@
                 return (typeof this === "number" || this instanceof Number) && !isNaN(this);
             }
         },
+        //是否为字符串
         IsString: {
             writable: true,
             enumerable: false,
@@ -35,6 +36,7 @@
                 return typeof this === "string" || this instanceof String;
             }
         },
+        //是否为布尔类型
         IsBoolean: {
             writable: true,
             enumerable: false,
@@ -43,6 +45,7 @@
                 return typeof this === "boolean";
             }
         },
+        //是否为object
         IsObject: {
             writable: true,
             enumerable: false,
@@ -51,13 +54,14 @@
                 return typeof this === "object" && this.IsArray() === false;
             }
         },
+        //返回对象副本
         Clone: {
             writable: true,
             enumerable: false,
             configurable: true,
             value: function () {
                 if (this.IsString() || this.IsNumber() || this.IsBoolean()) {
-                    return obj.constructor(obj);
+                    return this.constructor(this);
                 }
                 if (this.IsArray()) {
                     return this.Clone();
@@ -78,7 +82,8 @@
                 return obj;
             }
         },
-        ToString: {
+        //转化为json字符串
+        ToJson: {
             writable: true,
             enumerable: false,
             configurable: true,
@@ -86,6 +91,7 @@
                 return JSON.stringify(this);
             }
         },
+        //合并对象
         Extend: {
             writable: true,
             enumerable: false,

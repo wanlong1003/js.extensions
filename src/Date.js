@@ -1,5 +1,6 @@
 (function (Date) {
     Object.defineProperties(Date.prototype, {
+        //转化为指定格式的字符串
         ToString: {
             writable: true,
             enumerable: false,
@@ -28,6 +29,7 @@
                 return fmt;
             }
         },
+        //年份数加上指定值
         AddYears: {
             writable: true,
             enumerable: false,
@@ -39,6 +41,7 @@
                 return this;
             }
         },
+        //月份数加上指定值
         AddMonths: {
             writable: true,
             enumerable: false,
@@ -59,6 +62,7 @@
                 return this;
             }
         },
+        //日期加上指定天数
         AddDays: {
             writable: true,
             enumerable: false,
@@ -70,6 +74,7 @@
                 return this;
             }
         },
+        //小时数加上指定值
         AddHours: {
             writable: true,
             enumerable: false,
@@ -81,6 +86,7 @@
                 return this;
             }
         },
+        //分钟数加上指定值
         AddMinutes: {
             writable: true,
             enumerable: false,
@@ -92,6 +98,7 @@
                 return this;
             }
         },
+        //秒数加上指定值
         AddSeconds: {
             writable: true,
             enumerable: false,
@@ -103,6 +110,7 @@
                 return this;
             }
         },
+        //毫秒数加上指定值
         AddMilliseconds: {
             writable: true,
             enumerable: false,
