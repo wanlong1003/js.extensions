@@ -10,6 +10,7 @@
             }
         },
         //是否为数组
+        // Array.isArray()
         IsArray: {
             writable: true,
             enumerable: false,
