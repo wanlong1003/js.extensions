@@ -1,6 +1,7 @@
 (function (Array) {
     Object.defineProperties(Array.prototype, {
         //数组中所有元素是否都满足条件
+        // Array.prototype.every()
         All: {
             writable: true,
             enumerable: false,
@@ -15,6 +16,7 @@
             }
         },
         //数组中是否有满足条件的项
+        // Array.prototype.some()
         Any: {
             writable: true,
             enumerable: false,
@@ -29,6 +31,7 @@
             }
         },
         //创建一个数组副本
+        // Array.prototype.concat()
         Clone: {
             writable: true,
             enumerable: false,
@@ -97,6 +100,7 @@
             }
         },
         //返回所有符合条件的元素
+        // Array.prototype.filter()
         Where: {
             writable: true,
             enumerable: false,
@@ -112,6 +116,7 @@
             }
         },
         //对数组进行升序排序
+        //Array.prototype.sort()
         OrderBy: {
             writable: true,
             enumerable: false,
@@ -126,6 +131,7 @@
             }
         },
         //对数组进行降序排序
+        //Array.prototype.sort()
         OrderByDescending: {
             writable: true,
             enumerable: false,
@@ -140,6 +146,7 @@
             }
         },
         //将数组中的每个元素投影到数组中
+        // Array.prototype.map()
         Select: {
             writable: true,
             enumerable: false,
