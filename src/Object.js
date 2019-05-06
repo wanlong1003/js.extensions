@@ -55,6 +55,7 @@
             }
         },
         //返回对象副本
+        // 和 Object.assign({},source) 一致
         Clone: {
             writable: true,
             enumerable: false,
@@ -92,6 +93,7 @@
             }
         },
         //合并对象
+        // 和 Object.assign(target,source) 一致
         Extend: {
             writable: true,
             enumerable: false,
