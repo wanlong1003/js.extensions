@@ -187,6 +187,7 @@
             }
         },
         //返回数组中的最大值
+        //Array.prototype.reduce()
         Max: {
             writable: true,
             enumerable: false,
@@ -211,6 +212,7 @@
             }
         },
         //返回数组中的最小值
+        //Array.prototype.reduce()
         Min: {
             writable: true,
             enumerable: false,
@@ -235,6 +237,7 @@
             }
         },
         //返回指定属性的总和
+        //Array.prototype.reduce()
         Sum: {
             writable: true,
             enumerable: false,
@@ -257,6 +260,7 @@
             }
         },
         //返回指定属性的平均值
+        //Array.prototype.reduce()
         Average:{
             writable: true,
             enumerable: false,
