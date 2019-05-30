@@ -60,7 +60,7 @@
             }
         },
         //返回数组中的第一个匹配元素
-        First: {
+        First: {  //Array.prototype.find()
             writable: true,
             enumerable: false,
             configurable: true,
